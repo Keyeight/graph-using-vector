@@ -1,0 +1,55 @@
+README - Graph
+
+Este é um programa realizado em C++ 98 com uma simples demonstração do uso de classes e objetos para criar e exibir uma representação gráfica básica usando arte ASCII. O programa está dividido em vários arquivos, e este README fornece uma visão geral do código e de sua estrutura.
+
+Estrutura do Código:
+
+O código está organizado em vários arquivos:
+
+• main.cpp: O arquivo principal do programa, que contém a função main e é responsável por criar um objeto Graph, adicionar pontos a ele e exibir o gráfico.
+
+• Graph.hpp e Graph.cpp: Esses arquivos definem e implementam a classe Graph. A classe Graph é usada para criar e manipular uma representação gráfica simples. Ela possui métodos para adicionar pontos ao gráfico e exibir o gráfico em arte ASCII.
+
+• Vector.hpp: Este arquivo define a classe Vector2, que representa um ponto 2D com coordenadas x e y. A classe Vector2 é usada na classe Graph para armazenar pontos.
+
+• Makefile (Makefile): Este arquivo contém as instruções e regras de compilação do código. Ele especifica as flags de compilação, os arquivos de origem e os arquivos de objeto e fornece alvos para a construção, limpeza e reconstrução do projeto.
+
+Compilação:
+
+Para compilar o código, um Makefile está disponível. Você pode compilar o código executando o seguinte comando no terminal:
+
+1. 'make' - Isso irá gerar um executável chamado graph-using-vector.
+
+Uso:
+Após compilar o código, você pode executar o programa com o seguinte comando:
+
+./graph-using-vector
+O programa criará um objeto Graph, adicionará alguns pontos a ele e exibirá o gráfico como uma representação em arte ASCII.
+
+Classe Graph
+
+A classe Graph possui os seguintes métodos:
+
+• Graph(): O construtor inicializa o gráfico com um tamanho de 9x9.
+
+• AddPoint(Vector2 point): Este método é usado para adicionar um ponto ao gráfico. Ele verifica se há espaço para o ponto e, em seguida, o adiciona.
+
+• DisplayGraph(): Este método exibe o gráfico em arte ASCII. Ele itera pelos pontos e imprime '*' nas coordenadas onde os pontos existem.
+
+Classe Vector2
+
+A classe Vector2 é uma classe simples que representa um ponto 2D com coordenadas x e y.
+
+Makefile
+
+O Makefile contém regras para compilar o código. Você pode usar os seguintes comandos:
+
+• make: Compila o código.
+
+• make clean: Remove os arquivos de objeto.
+
+• make fclean: Remove o executável e os arquivos de objeto.
+
+• make re: Reconstrói o código do zero.
+
+Sinta-se à vontade para modificar e ampliar este código para criar representações gráficas mais complexas ou usá-lo como ponto de partida para seus próprios projetos.
